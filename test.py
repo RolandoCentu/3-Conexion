@@ -8,7 +8,7 @@ client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # 6. El cliente conecta su socket a la misma direccion IP y puerto colocado en el servidor (se establece conexion)
 host = '127.0.0.1'
-port = 8080
+port = 7777
 client_socket.connect((host, port))
 print('CONECTADO AL SERVIDOR')
 
