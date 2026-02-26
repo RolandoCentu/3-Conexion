@@ -54,7 +54,8 @@ def recibir_mensaje(cliente_socket):
             cliente_socket.close()
             break
 
-thread_envio = threading.Thread(target=enviar_mensaje,args=(client_socket,))
-thread_recepcion = threading.Thread(target=recibir_mensaje, args=(client_socket,))
+thread_envio = threading.Thread(target=enviar_mensaje,args=(client_socket, daemon=True))
+thread_recepcion = threading.Thread(target=recibir_mensaje, args=(client_socket, daemon=True))
 thread_envio.start()
+
 thread_recepcion.start() 
