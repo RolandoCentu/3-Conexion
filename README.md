@@ -4,7 +4,7 @@ Permite que múltiples clientes se conecten a un servidor, envíen mensajes y re
 
 ---
 
-### 🚀 Funcionamiento
+## 🚀 Funcionamiento
 Servidor
 Crea un socket TCP (AF_INET, SOCK_STREAM) y lo asocia a una dirección IP y puerto (por defecto 127.0.0.1:7777).
 
@@ -33,7 +33,7 @@ Detecta si el servidor se apaga y muestra un mensaje de desconexión.
 
 ---
 
-### ⚙️ Características
+## ⚙️ Características
 Comunicación en tiempo real entre múltiples clientes.
 
 Manejo de errores y desconexiones.
@@ -46,19 +46,19 @@ Compatible con cualquier puerto >1023 (por defecto 7777).
 
 ---
 
-### ▶️ Ejecución  
+## ▶️ Ejecución  
 
-#### 1️⃣ Iniciar el servidor  
+### 1️⃣ Iniciar el servidor  
 ```bash
 python server.py
 ```
 
-#### 2️⃣ Iniciar los clientes (en diferentes terminales)
+### 2️⃣ Iniciar los clientes (en diferentes terminales)
 ```bash
 python client.py
 ```
 
-#### 3️⃣ Enviar mensajes
+### 3️⃣ Enviar mensajes
 Cada cliente puede escribir y enviar mensajes que serán recibidos por todos los demás.
 Para salir:
 ```bash
@@ -66,7 +66,7 @@ salir
 ```
 
 ---
-### 🧩 Tecnologías utilizadas
+## 🧩 Tecnologías utilizadas
 - Python 3.11
 
 - Módulos estándar: socket, threading, sys
